@@ -1,17 +1,25 @@
 body {
     background-image: url("train\ station.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    background: white;
-    max-width: 80%;
-    margin: auto;
+    background: rgba(255, 255, 255, 0.85);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
     border: 3px solid black;
     border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 h1 {
@@ -27,13 +35,15 @@ h2 {
 
 button {
     border: 1px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     color: white;
     font-weight: bold;
     width: 200px;
-    margin-bottom: 5px;
+    margin: 5px auto;
+    display: block;
     border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 #increment-btn {
@@ -46,5 +56,5 @@ button {
 
 #save-el {
     font-weight: bold;
+    margin-top: 15px;
 }
-
